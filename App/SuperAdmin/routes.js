@@ -18,7 +18,7 @@ router.post('/login', async (req, res, next) => {
             }
             else {
                 req.session.token = admin.token;
-                res.redirect('/admin/schedule');
+                res.redirect('/adminp');
             }
         }
     } catch (error) {
